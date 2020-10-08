@@ -144,7 +144,9 @@ export function Gallery({
               onRequestChange(index - 1);
             }}
             style={{
-              left: "1rem"
+              left: "-120px",
+              top: "370px",
+              background: "rgba(0,0,0,0)",
             }}
           >
             <ArrowLeft />
@@ -159,7 +161,9 @@ export function Gallery({
               onRequestChange(index + 1);
             }}
             style={{
-              right: "1rem"
+              right: "-140px", 
+              top: "370px",
+              background: "rgba(0,0,0,0)",
             }}
           >
             <ArrowRight />
@@ -214,15 +218,15 @@ export function NavigationArrow({
       <button
         onClick={onClick}
         style={{
-          width: "50px",
-          height: "50px",
-          borderRadius: "50%",
+          color: "currentcolor",
+          width: "90px",
+          height: "90px",
           display: "flex",
-          background: "rgba(255,255,255,0.7)",
+          background: "rgba(0,0,0,0)",
           justifyContent: "center",
           alignItems: "center",
           cursor: "pointer",
-
+          outline: "none",
           border: "none"
         }}
       >
